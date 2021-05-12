@@ -1,0 +1,14 @@
+<input type="button" (click)="loadConfig()" value="loadConfig"/>
+
+
+<input *ngIf="!isAuthorized" type="button" (click)="login()" value="login"/>
+
+<input *ngIf="isAuthorized" type="button" (click)="logoff()" value="Log off"/>
+<hr>
+
+<hr>
+userData:
+{{userData| json}}
+<hr>
+accessToken:
+{{accessToken}}

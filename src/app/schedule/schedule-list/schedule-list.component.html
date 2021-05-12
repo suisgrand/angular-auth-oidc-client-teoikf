@@ -1,0 +1,14 @@
+<ul>
+  <li *ngFor="let s of items">
+    From: {{s.from| date}} - Till: {{s.till| date}}
+    <hr>
+    Mon:  {{s.days.monday.start}} - {{s.days.monday.end}}: {{s.days.monday.notes}}<br>
+    Tue:  {{s.days.tuesday.start}} - {{s.days.tuesday.end}}: {{s.days.tuesday.notes}}<br>
+    Wed:  {{s.days.wednesday.start}} - {{s.days.wednesday.end}}: {{s.days.wednesday.notes}}<br>
+    Thu:  {{s.days.thursday.start}} - {{s.days.thursday.end}}: {{s.days.thursday.notes}}<br>
+    Fri:  {{s.days.friday.start}} - {{s.days.friday.end}}: {{s.days.friday.notes}}<br>
+    Sat:  {{s.days.saturday.start}} - {{s.days.saturday.end}}: {{s.days.saturday.notes}}<br>
+    Sun:  {{s.days.sunday.start}} - {{s.days.sunday.end}}: {{s.days.sunday.notes}}<br>
+  </li>
+</ul>
+
